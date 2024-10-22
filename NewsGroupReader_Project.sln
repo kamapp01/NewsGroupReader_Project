@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_ICOM_INOTIFY", "MVVM_ICOM_INOTIFY\MVVM_ICOM_INOTIFY.csproj", "{1207ACEA-80F3-411D-BEED-16D24DAC5504}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsGroupReader_Project", "NewsGroupReader_Project\NewsGroupReader_Project.csproj", "{1207ACEA-80F3-411D-BEED-16D24DAC5504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
