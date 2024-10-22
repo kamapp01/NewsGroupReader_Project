@@ -1,0 +1,29 @@
+<Window x:Class="MVVM_ICOM_INOTIFY.Presentation.View.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:MVVM_ICOM_INOTIFY.Presentation.View"
+             xmlns:viewModel="clr-namespace:MVVM_ICOM_INOTIFY.Presentation.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             WindowStartupLocation="CenterScreen">
+            
+    <Window.Resources>
+        
+        <DataTemplate x:Name="greenViewTemplate" DataType="{x:Type viewModel:GreenViewModel }">
+            <view:GreenView/>
+        </DataTemplate>
+        
+        <DataTemplate x:Name="yellowViewTemplate" DataType="{x:Type TypeName=viewModel:YellowViewModel}">
+            <view:YellowView/>
+        </DataTemplate>
+        
+    </Window.Resources>
+    
+    
+    <Grid>
+        <ContentControl Content="{Binding Path=CurrentViewModel}"/>
+    </Grid>
+    
+</Window>
