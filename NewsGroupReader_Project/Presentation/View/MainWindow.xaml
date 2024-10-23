@@ -7,7 +7,9 @@
              xmlns:viewModel="clr-namespace:MVVM_ICOM_INOTIFY.Presentation.ViewModel"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300"
-             WindowStartupLocation="CenterScreen">
+             Height="920" Width="1400"
+             WindowStartupLocation="CenterScreen"
+             ResizeMode="NoResize">
             
     <Window.Resources>
         
@@ -17,6 +19,14 @@
         
         <DataTemplate x:Name="yellowViewTemplate" DataType="{x:Type TypeName=viewModel:YellowViewModel}">
             <view:YellowView/>
+        </DataTemplate>
+        
+        <DataTemplate x:Name="ConnectionViewTemplate" DataType="{x:Type TypeName=viewModel:ConnectionViewModel}">
+            <view:ConnectionView/>
+        </DataTemplate>
+        
+        <DataTemplate x:Name="UserViewTemplate" DataType="{x:Type TypeName=viewModel:UserViewModel}">
+            <view:UserView/>
         </DataTemplate>
         
     </Window.Resources>

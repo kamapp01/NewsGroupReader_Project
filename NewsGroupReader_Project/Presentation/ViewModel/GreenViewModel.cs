@@ -8,14 +8,14 @@ public class GreenViewModel : ViewModelBase
     public ICommand ChangeViewCommand => new CommandBase((object commandParameter) =>
     {
         {
-            var viewModelType = typeof(YellowViewModel);
+            var viewModelType = typeof(ConnectionViewModel);
 
             // checks if the ViewModel is already registered
             if (!ViewModelController.Instance.GetAllViewModels().ContainsKey(viewModelType))
             {
                 // if it's not registered, create and register a new instance
-                var yellowViewModel = new YellowViewModel();
-                ViewModelController.Instance.RegistryViewModel(yellowViewModel);
+                var connectionViewModel = new ConnectionViewModel();
+                ViewModelController.Instance.RegistryViewModel(connectionViewModel);
             }
 
             // if viewModel already registered, switch ViewModel 

@@ -1,0 +1,61 @@
+<UserControl x:Class="MVVM_ICOM_INOTIFY.Presentation.View.UserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MVVM_ICOM_INOTIFY.Presentation.View"
+             mc:Ignorable="d"
+             d:DesignHeight="920" d:DesignWidth="1400">
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        
+        <StackPanel>
+            
+            <WrapPanel>
+                
+                <Label x:Name="lb_groups"
+                       Content="News Groups : "
+                       Width="110"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       
+                       Margin="47,0,0,0"></Label>
+                
+                <Label x:Name="lb_headors"
+                       Content="News Group Headlines : "
+                       Width="160"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       
+                       Margin="560,0,0,0"></Label>
+                
+            </WrapPanel>
+            
+            <WrapPanel HorizontalAlignment="Center">
+                <ListView x:Name="lv_groups"
+                          Height="400"
+                          Width="600"
+                          Margin="0,0,70,0">
+                    
+                </ListView>
+                
+                <ListView x:Name="lv_headors"
+                          Height="400"
+                          Width="600">
+                    
+                </ListView>
+            </WrapPanel>
+            
+            <Label x:Name="lb_content"
+                   Content="Content of selected article : "
+                   FontSize="14"
+                   FontWeight="Bold"
+                   
+                   Margin="47,30,0,0"></Label>
+            
+            <TextBlock x:Name="txbl_articleContent"
+                       Width="1270"></TextBlock>
+        </StackPanel>
+        
+    </ScrollViewer>
+</UserControl>
