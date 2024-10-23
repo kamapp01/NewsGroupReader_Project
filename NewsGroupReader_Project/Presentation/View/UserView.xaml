@@ -11,6 +11,24 @@
         
         <StackPanel>
             
+            <Label x:Name="lb_userName"
+                       FontSize="12"
+                       Content="{Binding UserName}">
+            </Label>
+                
+            <Label x:Name="lb_serverName"
+                    FontSize="12"
+                    Content="{Binding ServerName}">
+                    
+            </Label>
+                
+            <Label x:Name="lb_portNo"
+                       FontSize="12"
+                       Content="{Binding PortNo}">
+                    
+            </Label>
+            
+            
             <WrapPanel>
                 
                 <Label x:Name="lb_groups"
@@ -19,7 +37,7 @@
                        FontSize="14"
                        FontWeight="Bold"
                        
-                       Margin="47,0,0,0"></Label>
+                       Margin="47,20,0,0"></Label>
                 
                 <Label x:Name="lb_headors"
                        Content="News Group Headlines : "
@@ -27,7 +45,7 @@
                        FontSize="14"
                        FontWeight="Bold"
                        
-                       Margin="560,0,0,0"></Label>
+                       Margin="560,20,0,0"></Label>
                 
             </WrapPanel>
             
@@ -51,7 +69,9 @@
                    FontSize="14"
                    FontWeight="Bold"
                    
-                   Margin="47,30,0,0"></Label>
+                   Margin="47,30,0,0"
+                   
+                   Visibility="{Binding ElementVisibility}"></Label>
             
             <TextBlock x:Name="txbl_articleContent"
                        Width="1270"></TextBlock>

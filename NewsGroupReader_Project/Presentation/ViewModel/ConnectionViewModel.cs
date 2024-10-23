@@ -96,6 +96,7 @@ namespace MVVM_ICOM_INOTIFY.Presentation.ViewModel
 
                     if (authenticated)
                     {
+                        SaveCredentials();
                         ChangeView();
                     }
                     
@@ -107,6 +108,8 @@ namespace MVVM_ICOM_INOTIFY.Presentation.ViewModel
                 }
             }
         });
+
+       
 
         private void CleanTextBoxes()
         {
@@ -154,7 +157,14 @@ namespace MVVM_ICOM_INOTIFY.Presentation.ViewModel
         }
         
         
-
+        private void SaveCredentials()
+        {
+            UserSession.Server = ServerInput;
+            UserSession.Port = PortInput;
+            UserSession.UserName = UserInput;
+        }
+        
+        
         private void ChangeView()
         {
             // Logic to change the view
