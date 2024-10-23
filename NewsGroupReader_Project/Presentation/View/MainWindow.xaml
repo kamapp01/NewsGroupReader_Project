@@ -13,10 +13,6 @@
             
     <Window.Resources>
         
-        <DataTemplate x:Name="greenViewTemplate" DataType="{x:Type viewModel:GreenViewModel }">
-            <view:GreenView/>
-        </DataTemplate>
-        
         <DataTemplate x:Name="yellowViewTemplate" DataType="{x:Type TypeName=viewModel:YellowViewModel}">
             <view:YellowView/>
         </DataTemplate>

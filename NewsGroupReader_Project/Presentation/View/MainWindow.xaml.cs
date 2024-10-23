@@ -11,12 +11,12 @@ public partial class MainWindow : Window
         DataContext = ((App)App.Current);
 
         // Registrér og skift til GreenViewModel kun hvis den ikke allerede er registreret
-        if (!ViewModelController.Instance.GetAllViewModels().ContainsKey(typeof(GreenViewModel)))
+        if (!ViewModelController.Instance.GetAllViewModels().ContainsKey(typeof(ConnectionViewModel)))
         {
-            new GreenViewModel();
+            new ConnectionViewModel();
         }
 
-        ViewModelController.Instance.SetCurrentViewModel(typeof(GreenViewModel));
+        ViewModelController.Instance.SetCurrentViewModel(typeof(ConnectionViewModel));
     }
 
 }
