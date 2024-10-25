@@ -36,25 +36,12 @@ public class ViewModelController
             return ((App)App.Current); 
         }
         
-        /*
+        
+        
         /// <summary>
         /// Method for registering a view model
         /// </summary>
         /// <param name="viewModel"> viewmodel to register</param>
-        /// <exception cref="Exception"> throw an Exception if the viewModel has already been registered</exception>
-        public void RegistryViewModel(ViewModelBase viewModel)
-        {
-
-            if (_viewModels.ContainsKey(viewModel.GetType()))
-            {
-                throw new Exception($"ViewModel {viewModel.GetType().Name} is already registered");
-            }
-            
-            _viewModels.Add(viewModel.GetType(), viewModel);
-            
-        }
-        */
-        
         public void RegistryViewModel(ViewModelBase viewModel)
         {
             if (_viewModels.ContainsKey(viewModel.GetType()))

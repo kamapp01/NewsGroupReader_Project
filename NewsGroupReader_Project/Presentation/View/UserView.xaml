@@ -53,13 +53,19 @@
                 <ListView x:Name="lv_groups"
                           Height="400"
                           Width="600"
-                          Margin="0,0,70,0">
+                          Margin="0,0,70,0"
+                          
+                          ItemsSource="{Binding ObservableListOfNewsGroups}"
+                          SelectedItem="{Binding SelectedNewsGroup}">
                     
                 </ListView>
                 
                 <ListView x:Name="lv_headors"
                           Height="400"
-                          Width="600">
+                          Width="600"
+                          
+                          ItemsSource="{Binding ObservableListOfNewsHeadlines}"
+                          SelectedItem="{Binding SelectedHeadline}">
                     
                 </ListView>
             </WrapPanel>

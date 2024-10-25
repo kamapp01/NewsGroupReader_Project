@@ -20,8 +20,9 @@
             
             <TextBox x:Name="tb_enterServer"
                      Height="30"
-                     Width="150"
+                     Width="200"
                      FontSize="14"
+                     VerticalContentAlignment="Center"
                      
                      Text="{Binding ServerInput}">
             </TextBox>
@@ -40,8 +41,8 @@
             
             <TextBox x:Name="tb_enterPort"
                      Height="30"
-                     Width="150"
-                     FontSize="14"
+                     Width="200"
+                     VerticalContentAlignment="Center"
                      
                      Text="{Binding PortInput}"></TextBox>
             
@@ -59,8 +60,9 @@
             
                      <TextBox x:Name="tb_enterUsername"
                               Height="30"
-                              Width="150"
+                              Width="200"
                               FontSize="14"
+                              VerticalContentAlignment="Center"
                               
                               Text="{Binding UserInput}"></TextBox>
             
@@ -78,8 +80,9 @@
             
                      <TextBox x:Name="tb_enterPassword"
                               Height="30"
-                              Width="150"
+                              Width="200"
                               FontSize="14"
+                              VerticalContentAlignment="Center"
                               
                               Text="{Binding PasswordInput}"></TextBox>
             

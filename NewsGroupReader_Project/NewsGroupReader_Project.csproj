@@ -10,9 +10,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Page Update="Presentation\View\YellowView.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </Page>
       <Page Update="Presentation\View\MainWindow.xaml">
         <Generator>MSBuild:Compile</Generator>
       </Page>
